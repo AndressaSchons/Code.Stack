@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imóveis em Lajeado - Pedó Imóveis - Mateus Pedó Imóveis Eireli</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css.css" />
+</head>
+
+<body>
+    <header>
+        <section class="menu">
+            <nav>
+                <ul>
+                    <li><a href=""><img
+                                src="https://s01.jetimgs.com/trtmSQMvLcly4zpNjJhSVpyv7QKbtyXFqM9yZvVpYSfrajssJP8X2Ya7ZBvXYB_gD8B0IWTmaKYlz7OESrGVJO8MIQrz-hkPLUuU3Yf_rWuOFYhdWVRhRTLT0A/logo+novo.jpg"></a>
+                    </li>
+                    <li><a class="link" href=""><strong>Início</strong></a></li>
+                    <li><a class="link" href="">Comprar</a></li>
+                    <li><a class="link" href="">Alugar</a></li>
+                    <li><a class="link" href="">Serviços</a></li>
+                    <li><a class="link" href="">Blog</a></li>
+                    <li><a class="link" href="">Institucional</a></li>
+                    <li><a class="link" href="">Contato</a></li>
+                </ul>
+            </nav>
+        </section>
+
+    </header>
+
+    <section class="carrossel">
+        <div id="slider">
+            <figure>
+                <span class="next"></span>
+                <span class="prev"></span>
+                <a href="#" class="trs ativa"><img src="./imagens/3.jpg" alt="Legenda da imagem 1" /></a>
+                <a href="#" class="trs"><img src="./imagens/1.jpg" alt="Legenda da imagem 2" /></a>
+            </figure>
+        </div>
+    </section>
+    <script type="text/javascript">
+        function img() {
+
+            var settings = {
+                primeiraImg() {
+                    elemento = document.querySelector(".carrossel a:first-child");
+                    elemento.classList.add("ativo");
+                },
+
+                carrossel: function () {
+                    elemento = document.querySelector(".ativo");
+                    if (elemento.nextElementSibling) {
+                        elemento.nextElementSibling.classList.add("ativo");
+                        elemento.classList.remove("ativo");
+                    } else {
+                        elemento.classList.remove("ativo");
+                        settings.primeiraImg();
+                    }
+                    intervalo = setInterval(settings.carrossel, 4000);
+                }
+            }
+
+        }
+        settings.primeiraImg();
+        var intervalo = setInterval(settings.carrossel, 4000);
+
+        window.addEventListener("load", img, false);
+    </script>
+</body>
+
+</html>

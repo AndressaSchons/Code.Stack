@@ -1,0 +1,52 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 1px 30px 1px;
+}
+
+
+.link {
+    text-decoration: none;
+    color: #1d1d1d;
+}
+
+.menu {
+    list-style: none;
+    background-color: antiquewhite;
+    object-fit: contain;
+}
+
+.menu img {
+    text-align: left;
+    height: 80px;
+}
+
+.menu ul li {
+    display: inline;
+
+}
+
+.menu :hover {
+    color: #0f218a;
+}
+
+
+.trs {
+    -webkit-transition: all 0.7s ease 0s;
+    -moz-transition: all 0.7s ease 0s;
+    -o-transition: all 0.7s ease 0s;
+    -ms-transition: all 0.7s ease 0s;
+    transition: all 0.7s ease 0s;
+}
+
+.carrossel{
+    overflow: hidden;
+    position: relative;
+    width: 1400px;
+    height: 200px;
+    background-color: beige;
+    display: block;
+    transform: translate3d(-5600px, 0px, 0px);
+}
+.ativa{
+    margin-left: 0px;
+}
