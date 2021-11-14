@@ -1,35 +1,45 @@
+@import "https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css";
 body {
     font-family: 'Montserrat', sans-serif;
-    margin: 1px 30px 1px;
+  font-size: 16px;
+    background-color: #e0e0e0;
 }
 
+/* Menu */
 
 .link {
     text-decoration: none;
     color: #1d1d1d;
 }
-
-.menu {
-    list-style: none;
-    background-color: antiquewhite;
-    object-fit: contain;
-}
-
-.menu img {
-    text-align: left;
-    height: 80px;
-}
-
-.menu ul li {
-    display: inline;
-
+.navbar-item{
+    padding: 20px;
 }
 
 .menu :hover {
     color: #0f218a;
 }
 
+.menu img {
+    margin-left: 10px;
+    
+}
+.menu{
+    
+    width: 100%;
 
+}
+
+header{
+    position: sticky;
+    top: 0%;
+    z-index: 1;
+}
+.linhaAmarela{
+    border-bottom: #ffcc00;
+    border-bottom-style: solid;
+    
+}
+/*Slides*/
 .trs {
     -webkit-transition: all 0.7s ease 0s;
     -moz-transition: all 0.7s ease 0s;
@@ -38,15 +48,82 @@ body {
     transition: all 0.7s ease 0s;
 }
 
-.carrossel{
-    overflow: hidden;
-    position: relative;
+
+#slides{
+    border-style: solid;
+    border-color: black;
     width: 1400px;
     height: 200px;
     background-color: beige;
     display: block;
     transform: translate3d(-5600px, 0px, 0px);
 }
+.slides{
+    border: black;
+    border-style: solid;
+}
+.slide{
+    display: none;
+}
 .ativa{
-    margin-left: 0px;
+    margin-left: 50px;
+}
+
+/*busca*/
+.busca{
+    
+    margin: 10px;
+    box-shadow: 0 0 8px 0 #00000036;
+}
+.container{
+    
+    padding: 10px;
+    margin-bottom: 15px;
+}
+.transf :hover{
+    -webkit-transform:scale(1.02); 
+    -moz-transform:scale(1.02); 
+        -o-transform:scale(1.02);
+           transform:scale(1.02);
+}
+.card-content{
+    margin: 2px;
+}
+.rodape{
+    background-color: white;
+
+}
+
+.rodape-text{
+    margin-left: 85px;
+}
+.card-image{
+    position: relative;
+}
+.balloon{
+    position: absolute;
+    top: 20px;
+    color: white;
+    background-color: blue;
+    border-radius: 5px;
+}
+.cidade{
+    position: absolute;
+    top: 275px;
+    left: 20px;
+    color: white;
+    text-shadow: black;
+}
+.card-header-title{
+    color: blue;
+}
+
+.example-slide {
+    align-items: center;
+    background-color: #666;
+    color: #999;
+    display: flex;
+    font-size: 1.5rem;
+    justify-content: center;
+    min-height: 10rem;
 }

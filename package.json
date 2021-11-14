@@ -1,0 +1,24 @@
+{
+  "name": "coda.stack",
+  "version": "1.0.0",
+  "description": "projeto 1 estagio",
+  "main": "backend.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "browser-sync start --server 'src' --files 'src' --single"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AndressaSchons/Code.Stack.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AndressaSchons/Code.Stack/issues"
+  },
+  "homepage": "https://github.com/AndressaSchons/Code.Stack#readme",
+  "devDependencies": {
+    "browser-sync": "^2.27.7"
+  }
+ 
+}

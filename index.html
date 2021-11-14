@@ -9,68 +9,504 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+        integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="css.css" />
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14"></script>
+    <script src="backend.js" type="module"></script>
 </head>
 
 <body>
     <header>
-        <section class="menu">
-            <nav>
-                <ul>
-                    <li><a href=""><img
-                                src="https://s01.jetimgs.com/trtmSQMvLcly4zpNjJhSVpyv7QKbtyXFqM9yZvVpYSfrajssJP8X2Ya7ZBvXYB_gD8B0IWTmaKYlz7OESrGVJO8MIQrz-hkPLUuU3Yf_rWuOFYhdWVRhRTLT0A/logo+novo.jpg"></a>
-                    </li>
-                    <li><a class="link" href=""><strong>Início</strong></a></li>
-                    <li><a class="link" href="">Comprar</a></li>
-                    <li><a class="link" href="">Alugar</a></li>
-                    <li><a class="link" href="">Serviços</a></li>
-                    <li><a class="link" href="">Blog</a></li>
-                    <li><a class="link" href="">Institucional</a></li>
-                    <li><a class="link" href="">Contato</a></li>
-                </ul>
-            </nav>
-        </section>
+        <section>
+            <div class="menu">
+                <nav class="navbar is-white has-shadow" role="navigation" aria-label="main navigation">
+                    <div class="navbar-brand">
+                        <a href="index.html" class="navbar-item">
+                            <img
+                                src="https://s01.jetimgs.com/trtmSQMvLcly4zpNjJhSVpyv7QKbtyXFqM9yZvVpYSfrajssJP8X2Ya7ZBvXYB_gD8B0IWTmaKYlz7OESrGVJO8MIQrz-hkPLUuU3Yf_rWuOFYhdWVRhRTLT0A/logo+novo.jpg">
+                        </a>
+                    </div>
+                    <div class="navbar-menu">
+                        <div class="navbar-end">
+                            <a class="navbar-item">
+                                <strong>Início</strong>
+                            </a>
+                            <a class="navbar-item">
+                                Comprar
+                            </a>
+                            <a class="navbar-item">
+                                Alugar
+                            </a>
+                            <div class="navbar-item has-dropdown is-hoverable">
+                                <a class="navbar-link">Serviços</a>
 
+                                <div class="navbar-dropdown">
+                                    <a class="navbar-item">Solicite Seu Imóvel</a>
+                                    <a class="navbar-item">Anuncie Seu Imóvel</a>
+                                    <a class="navbar-item">Como Negociar seu Imóvel</a>
+                                    <a class="navbar-item">Minha Lageado</a>
+                                    <a class="navbar-item">Aluguel Online</a>
+                                    <a class="navbar-item">Simulação de Financiamento</a>
+                                </div>
+                            </div>
+                            <a class="navbar-item">
+                                Blog
+                            </a>
+                            <a class="navbar-item">
+                                Institucional
+                            </a>
+                            <a class="navbar-item">
+                                Contato
+                            </a>
+                            <div class="navbar-item has-dropdown is-hoverable">
+                                <a class="navbar-link"><i class="fas fa-phone-square"></i></a>
+                                <div class="navbar-dropdown">
+                                    <a class="navbar-item"><strong>Pedó Imóveis</strong></a>
+                                    <a class="navbar-item">Venda</a>
+                                    <a href="https://api.whatsapp.com/send?phone=+555183290600" class="navbar-item">(51)
+                                        83290600</a>
+                                    <a class="navbar-item">Aluguel</a>
+                                    <a href="https://api.whatsapp.com/send?phone=+555181686400" class="navbar-item">(51)
+                                        81686400</a>
+                                    <a class="navbar-item">Outros</a>
+                                    <a href="tel:+555137298505" class="navbar-item">(51) 37298505</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </section>
     </header>
 
-    <section class="carrossel">
-        <div id="slider">
-            <figure>
-                <span class="next"></span>
-                <span class="prev"></span>
-                <a href="#" class="trs ativa"><img src="./imagens/3.jpg" alt="Legenda da imagem 1" /></a>
-                <a href="#" class="trs"><img src="./imagens/1.jpg" alt="Legenda da imagem 2" /></a>
-            </figure>
+    <section>
+        <div id="carousel"/>        
+    </section>
+
+    <section class="container" style="background-color: white;">
+        <div class="columns busca color">
+            <div class="column is-3">
+                <div class="buttons has-addons">
+                    <button class="button is-info is-outlined is-selected">Venda</button>
+                    <button class="button is-link is-outlined">Locação</button>
+                </div>
+            </div>
+            <div class="column is-4">
+                <div class="control">
+                    <div class="select">
+                        <select>
+                            <option>Arroio do Meio - RS</option>
+                            <option>Capão da Canoa - RS</option>
+                            <option>Cruzeiro do Sul - RS</option>
+                            <option>Estrela - RS</option>
+                            <option>Fazenda Vilanova - RS</option>
+                            <option>Lajeado - RS</option>
+                            <option>Marques de Souza - RS</option>
+                            <option>Santa Clara do Sul - RS</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="column is-4">
+                <div class="control">
+                    <div class="select">
+                        <select>
+                            <option>Apartamento</option>
+                            <option>Box</option>
+                            <option>Casa</option>
+                            <option>Casa Comercial</option>
+                            <option>Casa de Condomínio</option>
+                            <option>Chácara</option>
+                            <option>Cobertura</option>
+                            <option>Duplex</option>
+                            <option>Germinado</option>
+                            <option>Kitnet</option>
+                            <option>Loft</option>
+                            <option>Loja</option>
+                            <option>Pavilhão</option>
+                            <option>Ponto Comercial</option>
+                            <option>Prédio Residencial</option>
+                            <option>Sala Comercial</option>
+                            <option>Sobrado</option>
+                            <option>Terreno</option>
+                            <option>Terreno Comercial</option>
+                            <option>Área Rural</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="column is-3">
+                <button class="button is-link"><strong>Buscar</strong></button>
+            </div>
+        </div>
+        <div class="has-text-centered">
+            <a href="">
+                <p>Busca por Código</p>
+            </a>
         </div>
     </section>
-    <script type="text/javascript">
-        function img() {
 
-            var settings = {
-                primeiraImg() {
-                    elemento = document.querySelector(".carrossel a:first-child");
-                    elemento.classList.add("ativo");
-                },
 
-                carrossel: function () {
-                    elemento = document.querySelector(".ativo");
-                    if (elemento.nextElementSibling) {
-                        elemento.nextElementSibling.classList.add("ativo");
-                        elemento.classList.remove("ativo");
-                    } else {
-                        elemento.classList.remove("ativo");
-                        settings.primeiraImg();
-                    }
-                    intervalo = setInterval(settings.carrossel, 4000);
-                }
-            }
+    <section>
+        <div class="container is-max-widescreem">
+            <div class="columns">
+                <div class="column is-3 linhaAmarela">
+                    <p class="title is-4">Imóveis à venda</p>
+                </div>
+                <div class="column is-8"></div>
+                <div class="column is-3"> <button class="button is-link is-outlined">Ver Mais</button></div>
+            </div>
 
-        }
-        settings.primeiraImg();
-        var intervalo = setInterval(settings.carrossel, 4000);
+            <div class="columns">
+                <div class="column">
+                    <div class="card">
+                        <div class="card-image">
+                            <figure class="image is-1by1">
+                                <img src="https://s01.jetimgs.com/trtuA68vbsluJ4ThxTJB_qdrKrHghonQ4pwl0P-n-Cb5s0V8CLipyJRYB6h_0pIoSp3wCuUipIUs1Tw3BxplHitkGVPStGzEawTSahQyIOhqvgckxVbeoXLkhwFwSEva6ZC9Rqy4r0PmlhUTSmrUKutSoeaV-xJZm-dv4c68h6E/Fachada.jpg"
+                                    alt="Placeholder image">
+                            </figure>
 
-        window.addEventListener("load", img, false);
-    </script>
+                            <div class="balloon">
+                                Apartamento
+                            </div>
+                            <div class="cidade">
+                                RS - Lajeado
+                            </div>
+                        </div>
+                        <div class="card-content">
+                            <p class="card-header-title">Florestal</p>
+                            <h6>Encante-se com esse lindo projeto ! Lançamento no Florestal Design
+                                moderno,
+                                projeto diferenciado, pl...</h6>
+                            <div class="columns has-text-centered">
+                                <div class="column">
+                                    <i class="fas fa-bath"> 1 </i>
+                                </div>
+                                <div class="column">
+                                    <i class="fas fa-car"> 2 </i>
+                                </div>
+                                <div class="column">
+                                    <i class="fas fa-bed"> 2 </i>
+                                </div>
+                            </div>
+                            <h5 class="valor">Valor</h5>
+                            <h6 class="valor-num">4800.00</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="card">
+                        <div class="card-image">
+                            <figure class="image is-1by1">
+                                <img src="https://s01.jetimgs.com/trtuA68vbsluJ4ThxTJB_qdrKrHghonQ4pwl0P-n-Cb5s0V8CLipyJRYB6h_0pIoSp3wCuUipIUs1Tw3BxplHitkGVPStGzEawTSahQyIOhqvgckxVbeoXLkhwFwSEva6ZC9Rqy4r0PmlhUTSmrUKutSoeaV-xJZm-dv4c68h6E/Fachada.jpg"
+                                    alt="Placeholder image">
+                                    <div class="balloon">
+                                        Apartamento
+                                    </div>
+                                    <div class="cidade">
+                                        RS - Lajeado
+                                    </div>
+                            </figure>
+                        </div>
+                        <div class="card-content">
+                            <p class="card-header-title">Florestal</p>
+                            <div>
+                                Encante-se com esse lindo projeto ! Lançamento no Florestal Design
+                                moderno, projeto diferenciado, pl...
+                                <div class="columns has-text-centered">
+                                    <div class="column">
+                                        <i class="fas fa-bath"> 1 </i>
+                                    </div>
+                                    <div class="column">
+                                        <i class="fas fa-car"> 2 </i>
+                                    </div>
+                                </div>
+                                <p class="subtitle is-4">Valor</p>
+                                4800.00
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="card">
+                        <div class="card-image">
+                            <figure class="image is-1by1">
+                                <img src="https://s01.jetimgs.com/trtuA68vbsluJ4ThxTJB_qdrKrHghonQ4pwl0P-n-Cb5s0V8CLipyJRYB6h_0pIoSp3wCuUipIUs1Tw3BxplHitkGVPStGzEawTSahQyIOhqvgckxVbeoXLkhwFwSEva6ZC9Rqy4r0PmlhUTSmrUKutSoeaV-xJZm-dv4c68h6E/Fachada.jpg"
+                                    alt="Placeholder image">
+                            </figure>
+                            <div class="balloon">
+                                Apartamento
+                            </div>
+                            <div class="cidade">
+                                RS - Lajeado
+                            </div>
+                        </div>
+                        <div class="card-content">
+                            <p class="card-header-title">Florestal</p>
+                            <h6>Encante-se com esse lindo projeto ! Lançamento no Florestal Design
+                                moderno,
+                                projeto diferenciado, pl...</h6>
+                            <div class="columns has-text-centered">
+                                <div class="column">
+                                    <i class="fas fa-bath"> 1 </i>
+                                </div>
+                                <div class="column">
+                                    <i class="fas fa-car"> 2 </i>
+                                </div>
+                            </div>
+
+                            <h5 class="valor">Valor</h5>
+                            <h6 class="valor-num">4800.00</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="card">
+                        <div class="classe-extra">
+                            <div class="card-image">
+                                <figure class="image is-1by1">
+                                    <img src="https://s01.jetimgs.com/trtuA68vbsluJ4ThxTJB_qdrKrHghonQ4pwl0P-n-Cb5s0V8CLipyJRYB6h_0pIoSp3wCuUipIUs1Tw3BxplHitkGVPStGzEawTSahQyIOhqvgckxVbeoXLkhwFwSEva6ZC9Rqy4r0PmlhUTSmrUKutSoeaV-xJZm-dv4c68h6E/Fachada.jpg"
+                                        alt="Placeholder image">
+                                </figure>
+                                <div class="balloon">
+                                    Apartamento
+                                </div>
+                                <div class="cidade">
+                                    RS - Lajeado
+                                </div>
+                            </div>
+                            <div class="card-content">
+                                <p class="card-header-title">Florestal</p>
+                                <h6>Encante-se com esse lindo projeto ! Lançamento no Florestal Design
+                                    moderno,
+                                    projeto diferenciado, pl...</h6>
+                                <div class="columns has-text-centered">
+                                    <div class="column">
+                                        <i class="fas fa-bath"> 1 </i>
+                                    </div>
+                                    <div class="column">
+                                        <i class="fas fa-car"> 2 </i>
+                                    </div>
+                                </div>
+                                <h5 class="valor">Valor</h5>
+                                <h6 class="valor-num">4800.00</h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="columns">
+                <div class="column is-3 linhaAmarela">
+                    <p class="title is-4">Imóveis Para Alugar</p>
+                </div>
+                <div class="column is-7"></div>
+                <div class="column is-3"> <button class="button is-link is-outlined">Ver Mais</button></div>
+            </div>
+            <div class="columns">
+                <div class="column">
+                    <div class="card">
+                        <div class="card-image">
+                            <figure class="image is-1by1">
+                                <img src="https://s01.jetimgs.com/trtuA68vbsluJ4ThxTJB_qdrKrHghonQ4pwl0P-n-Cb5s0V8CLipyJRYB6h_0pIoSp3wCuUipIUs1Tw3BxplHitkGVPStGzEawTSahQyIOhqvgckxVbeoXLkhwFwSEva6ZC9Rqy4r0PmlhUTSmrUKutSoeaV-xJZm-dv4c68h6E/Fachada.jpg"
+                                    alt="Placeholder image">
+                            </figure>
+                            <div class="balloon">
+                                Apartamento
+                            </div>
+                            <div class="cidade">
+                                RS - Lajeado
+                            </div>
+                        </div>
+                        <div class="card-content">
+                            <p class="card-header-title">Florestal</p>
+                            <h6>Encante-se com esse lindo projeto ! Lançamento no Florestal Design
+                                moderno,
+                                projeto diferenciado, pl...</h6>
+                            <div class="columns has-text-centered">
+                                <div class="column">
+                                    <i class="fas fa-bath"> 1 </i>
+                                </div>
+                                <div class="column">
+                                    <i class="fas fa-car"> 2 </i>
+                                </div>
+                            </div>
+                            <h5 class="valor">Valor</h5>
+                            <h6 class="valor-num">4800.00</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="card">
+                        <div class="card-image">
+                            <figure class="image is-1by1">
+                                <img src="https://s01.jetimgs.com/trtuA68vbsluJ4ThxTJB_qdrKrHghonQ4pwl0P-n-Cb5s0V8CLipyJRYB6h_0pIoSp3wCuUipIUs1Tw3BxplHitkGVPStGzEawTSahQyIOhqvgckxVbeoXLkhwFwSEva6ZC9Rqy4r0PmlhUTSmrUKutSoeaV-xJZm-dv4c68h6E/Fachada.jpg"
+                                    alt="Placeholder image">
+                            </figure>
+                            <div class="balloon">
+                                Apartamento
+                            </div>
+                            <div class="cidade">
+                                RS - Lajeado
+                            </div>
+                        </div>
+                        <div class="card-content">
+                            <p class="card-header-title">Florestal</p>
+                            <h6>Encante-se com esse lindo projeto! Lançamento no Florestal Design moderno, projeto
+                                diferenciado, pl...</h6>
+                            <div class="columns has-text-centered">
+                                <div class="column">
+                                    <i class="fas fa-bath"> 1 </i>
+                                </div>
+                                <div class="column">
+                                    <i class="fas fa-car"> 2 </i>
+                                </div>
+                            </div>
+                            <h5 class="valor">Valor</h5>
+                            <h6 class="valor-num">4800.00</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="card">
+                        <div class="card-image">
+                            <figure class="image is-1by1">
+                                <img src="https://s01.jetimgs.com/trtuA68vbsluJ4ThxTJB_qdrKrHghonQ4pwl0P-n-Cb5s0V8CLipyJRYB6h_0pIoSp3wCuUipIUs1Tw3BxplHitkGVPStGzEawTSahQyIOhqvgckxVbeoXLkhwFwSEva6ZC9Rqy4r0PmlhUTSmrUKutSoeaV-xJZm-dv4c68h6E/Fachada.jpg"
+                                    alt="Placeholder image">
+                            </figure>
+                            <div class="balloon">
+                                Apartamento
+                            </div>
+                            <div class="cidade">
+                                RS - Lajeado
+                            </div>
+                        </div>
+                        <div class="card-content">
+                            <p class="card-header-title">Florestal</p>
+                            <h6>Encante-se com esse lindo projeto ! Lançamento no Florestal Design
+                                moderno,
+                                projeto diferenciado, pl...</h6>
+                            <div class="columns has-text-centered">
+                                <div class="column">
+                                    <i class="fas fa-bath"> 1 </i>
+                                </div>
+                                <div class="column">
+                                    <i class="fas fa-car"> 2 </i>
+                                </div>
+                            </div>
+                            <h5 class="valor">Valor</h5>
+                            <h6 class="valor-num">4800.00</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="card">
+                        <div class="card-image">
+                            <figure class="image is-1by1">
+                                <img src="https://s01.jetimgs.com/trtuA68vbsluJ4ThxTJB_qdrKrHghonQ4pwl0P-n-Cb5s0V8CLipyJRYB6h_0pIoSp3wCuUipIUs1Tw3BxplHitkGVPStGzEawTSahQyIOhqvgckxVbeoXLkhwFwSEva6ZC9Rqy4r0PmlhUTSmrUKutSoeaV-xJZm-dv4c68h6E/Fachada.jpg"
+                                    alt="Placeholder image">
+                            </figure>
+                            <div class="balloon">
+                                Apartamento
+                            </div>
+                            <div class="cidade">
+                                RS - Lajeado
+                            </div>
+                        </div>
+                        <div class="card-content">
+                            <p class="card-header-title">Florestal</p>
+                            <h6>Encante-se com esse lindo projeto ! Lançamento no Florestal Design
+                                moderno,
+                                projeto diferenciado, pl...</h6>
+                            <div class="columns has-text-centered">
+                                <div class="column">
+                                    <i class="fas fa-bath"> 1 </i>
+                                </div>
+                                <div class="column">
+                                    <i class="fas fa-car"> 2 </i>
+                                </div>
+                            </div>
+                            <h5 class="valor">Valor</h5>
+                            <h6 class="valor-num">4800.00</h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+    <section>
+        <div class="container is-max-widescreem">
+            <div class="column is-3 linhaAmarela">
+                <p class="title is-4">Posts em Destaque</p>
+            </div>
+            <div class="column is-7"></div>
+            <div class="columns">
+                <div class="column">
+                    <div class="card">
+                        <div class="card-image">
+                            <figure class="image is-16by9">
+                                <img src="https://s01.jetimgs.com/trs2SR8vLcluowtNjIVNJGqybLku8KZ9a-izn__plQ133AG5s3UtoSmEhRbY1VxR6-XtNgYR7QjE7vYvYwFz1HFL3LTmZc9tROQ8A7Bpy0SajRWqDA/praia-da-costa.jpg"
+                                    alt="Placeholder image">
+                            </figure>
+                        </div>
+                        <div class="card-content">
+                            <p class="card-header-title">COMO ESCOLHER A SALA IDEAL PARA O SEU NEGÓCIO?</p>
+                            <h6>Olá,Tudo bem com você? Hoje, vamos conversar com os nossos clientes que
+                                tem o espírito empreendedor, isso mesmo, para aqueles que respiram negócio, que já
+                                tem o
+                                seu
+                                ou que querem abrir nesse ano....</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="card">
+                        <div class="card-image">
+                            <figure class="image is-16by9">
+                                <img src="https://s01.jetimgs.com/trs2SR8vLcluowtNjIWdgegKXvDkdFutqc9yZj_xlCtRCjVU_BEvZlRavRbe1f1qCOQByLpZfITn1pR1utZYFmMMaLYnXcNofk_DdEVKZ0lu5H9vpZc/blog+%281%29.png"
+                                    alt="Placeholder image">
+                            </figure>
+                        </div>
+                        <div class="card-content">
+                            <p class="card-header-title">COMO ESCOLHER A SALA IDEAL PARA O SEU NEGÓCIO?</p>
+                            <h6>Olá,Tudo bem com você? Hoje, vamos conversar com os nossos clientes que
+                                tem o espírito empreendedor, isso mesmo, para aqueles que respiram negócio, que já tem o
+                                seu
+                                ou que querem abrir nesse ano....</h6>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="rodape">
+        <div class="rodape-text">
+            <p><strong>Pedó Imóveis</strong></p>
+            <p><strong>Endereço</strong></p>
+            <h3>Lajeado - RS</h3>
+            <h3>Av Benjamin Constant, 1737, Florestal</h3>
+            <h6>Loja 01</h6>
+            <h3>95900-700</h3>
+            <p><strong>Horário de atendimento</strong></p>
+            <h6>Segunda a quinta-feira: 8:00 às 18:30 | Sexta-feira: 8:00 às 18:00 | Sábado: 8:30 às 12:00</h6>
+            <p><strong>Telefones</strong></p>
+
+            <h6>Venda</h6>
+            <h6>(51) 98329-0600</h6>
+            <h6>Aluguel</h6>
+            <h6>(51) 98168-6400</h6>
+            <h6>Outros</h6>
+            <h6>(51) 3729-8505</h6>
+        </div>
+        <div class="imagem">
+            <img
+                src="https://s01.jetimgs.com/trtmSQMvLcly4zpNjJhSVpyv7QKbtyXFqM9yZvVpYSfrajssJP8X2Ya7ZBvXYB_gD8B0IWTmaKYlz7OESrGVJO8MIQrz-hkPLUuU3Yf_rWuOFYhdWVRhRTLT0A/logo+novo.jpg">
+        </div>
+    </footer>
+
+   
 </body>
 
 </html>
